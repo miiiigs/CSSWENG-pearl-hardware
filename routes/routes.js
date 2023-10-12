@@ -14,6 +14,7 @@ router.use(bodyParser.urlencoded({ extended: true }));
 //GETS
 router.get(`/`, controller.getIndex);
 router.get(`/login`, controller.getLogin);
+router.get(`/checkout`, controller.getCheckout);
 router.get('/sortProducts', controller.sortProducts);
 router.get('/searchProducts', controller.searchProducts);
 //POSTS

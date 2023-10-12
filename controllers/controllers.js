@@ -60,6 +60,17 @@ const controller = {
         }       
     },
 
+    getCheckout: async function(req, res) {
+        try{
+            
+            
+            res.render("checkout", {
+            });
+        } catch{
+            res.sendStatus(400);   
+        }       
+    },
+
     register: async function(req, res) {
 
         const errors = validationResult(req);
